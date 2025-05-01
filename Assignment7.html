@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Connect With Me</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle at 10% 20%, #1b2735 0%, #090a0f 100%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .bg-blur {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: linear-gradient(135deg, #ff6ec4 0%, #7873f5 100%);
+      filter: blur(180px);
+      z-index: 0;
+      top: -100px;
+      right: -100px;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      padding: 40px 30px;
+      text-align: center;
+      width: 90%;
+      max-width: 430px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #fff;
+      padding: 13px 20px;
+      border-radius: 40px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .social a i {
+      font-size: 1.2rem;
+    }
+
+    .social a:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .whatsapp {
+      background: linear-gradient(to right, #25d366, #128c7e);
+    }
+
+    .linkedin {
+      background: linear-gradient(to right, #0077b5, #005582);
+    }
+
+    .youtube {
+      background: linear-gradient(to right, #ff4e50, #f00000);
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .social a span {
+      z-index: 1;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blur"></div>
+
+  <div class="card">
+    <h1>Let's Connect!</h1>
+    <p>Feel free to reach out to me through any of the platforms below:</p>
+
+    <div class="social">
+      <a href="https://web.whatsapp.com/" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+      </a>
+      <a href="https://www.linkedin.com/" class="linkedin" target="_blank">
+        <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+      </a>
+      <a href="https://www.youtube.com/" class="youtube" target="_blank">
+        <i class="fab fa-youtube"></i> <span>YouTube</span>
+      </a>
+      <a href="https://www.instagram.com/" class="instagram" target="_blank">
+        <i class="fab fa-instagram"></i> <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+

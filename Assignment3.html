@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting Tags</title>
+    <style>
+        :root {
+            --bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --primary: #4CAF50;
+            --accent: #d7ffd9;
+            --text: #333;
+            --code-bg: #282c34;
+            --code-text: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 30px 10%;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .example {
+            background-color: var(--card-bg);
+            border-left: 5px solid var(--primary);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .example:hover {
+            transform: scale(1.01);
+        }
+
+        code {
+            background-color: var(--accent);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        kbd {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Text Formatting Tags</h1>
+    <p>Learn how to format your text using basic HTML tags.</p>
+
+    <h2>1. Bold Text: <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code></h2>
+    <p><code>&lt;b&gt;</code> makes text bold. <code>&lt;strong&gt;</code> also makes it bold but emphasizes importance.</p>
+    <div class="example">
+        <p><b>This is bold text using &lt;b&gt; tag.</b></p>
+        <p><strong>This is bold text using &lt;strong&gt; tag.</strong></p>
+    </div>
+
+    <h2>2. Italic Text: <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code></h2>
+    <p><code>&lt;i&gt;</code> italicizes text. <code>&lt;em&gt;</code> also italicizes with emphasis.</p>
+    <div class="example">
+        <p><i>This is italic text using &lt;i&gt; tag.</i></p>
+        <p><em>This is italic text using &lt;em&gt; tag.</em></p>
+    </div>
+
+    <h2>3. Underlined Text: <code>&lt;u&gt;</code></h2>
+    <p>Use <code>&lt;u&gt;</code> to underline text.</p>
+    <div class="example">
+        <p><u>This is underlined text using &lt;u&gt; tag.</u></p>
+    </div>
+
+    <h2>4. Strikethrough Text: <code>&lt;s&gt;</code> or <code>&lt;del&gt;</code></h2>
+    <p>Use <code>&lt;s&gt;</code> or <code>&lt;del&gt;</code> to show deleted or incorrect content.</p>
+    <div class="example">
+        <p><s>This is strikethrough text using &lt;s&gt; tag.</s></p>
+        <p><del>This is strikethrough text using &lt;del&gt; tag.</del></p>
+    </div>
+
+    <h2>5. Superscript Text: <code>&lt;sup&gt;</code></h2>
+    <p>Use <code>&lt;sup&gt;</code> to display superscript content.</p>
+    <div class="example">
+        <p>H<sup>2</sup>O represents water.</p>
+    </div>
+
+    <h2>6. Subscript Text: <code>&lt;sub&gt;</code></h2>
+    <p>Use <code>&lt;sub&gt;</code> to display subscript content.</p>
+    <div class="example">
+        <p>CO<sub>2</sub> represents carbon dioxide.</p>
+    </div>
+
+    <h2>7. Code Text: <code>&lt;code&gt;</code></h2>
+    <p><code>&lt;code&gt;</code> is used for inline code snippets.</p>
+    <div class="example">
+        <pre>&lt;html&gt;
+    &lt;head&gt;&lt;/head&gt;
+    &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+
+    <h2>8. Keyboard Input: <code>&lt;kbd&gt;</code></h2>
+    <p><code>&lt;kbd&gt;</code> is used to show user input from a keyboard.</p>
+    <div class="example">
+        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+    </div>
+
+    <h2>9. Preformatted Text: <code>&lt;pre&gt;</code></h2>
+    <p><code>&lt;pre&gt;</code> retains spaces and line breaks.</p>
+    <div class="example">
+        <pre>    This is preformatted text.
+It preserves spaces and line breaks.</pre>
+    </div>
+
+    <h2>10. Small Text: <code>&lt;small&gt;</code></h2>
+    <p>Use <code>&lt;small&gt;</code> to reduce the font size.</p>
+    <div class="example">
+        <p><small>This is small text using &lt;small&gt; tag.</small></p>
+    </div>
+
+    <h2>11. Highlighted Text: <code>&lt;mark&gt;</code></h2>
+    <p><code>&lt;mark&gt;</code> highlights the text for emphasis.</p>
+    <div class="example">
+        <p>This is <mark>highlighted text</mark> using &lt;mark&gt; tag.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aesthetic Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .gallery-container {
+      width: 90%;
+      max-width: 1300px;
+      padding: 40px;
+      background-color: #ffffffcc;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .gallery-title {
+      font-size: 2.8rem;
+      margin-bottom: 35px;
+      color: #2c3e50;
+      letter-spacing: 1px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery-container">
+    <div class="gallery-title">Image Gallery</div>
+    <div class="image-grid">
+      <img src="https://picsum.photos/seed/1/400/300" alt="Random 1" />
+      <img src="https://picsum.photos/seed/2/400/300" alt="Random 2" />
+      <img src="https://picsum.photos/seed/3/400/300" alt="Random 3" />
+      <img src="https://picsum.photos/seed/4/400/300" alt="Random 4" />
+      <img src="https://picsum.photos/seed/5/400/300" alt="Random 5" />
+      <img src="https://picsum.photos/seed/6/400/300" alt="Random 6" />
+      <img src="https://picsum.photos/seed/7/400/300" alt="Random 7" />
+      <img src="https://picsum.photos/seed/8/400/300" alt="Random 8" />
+    </div>
+    <footer>&copy; 2025 Modern Gallery</footer>
+  </div>
+
+</body>
+</html>
+
+
+

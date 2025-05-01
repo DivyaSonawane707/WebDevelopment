@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Tags in HTML</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #343a40;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .container {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      width: 100%;
+      height: auto;
+      overflow-y: auto;
+      transition: all 0.3s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #4c4f56;
+      margin-bottom: 25px;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #6c757d;
+      padding-bottom: 8px;
+      transition: color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #007bff;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 25px;
+      list-style-position: inside;
+    }
+
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: #495057;
+      line-height: 1.6;
+      transition: color 0.3s ease;
+    }
+
+    li:hover {
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    /* Styling for Unordered List */
+    ul {
+      list-style-type: square;
+    }
+
+    /* Styling for Ordered List */
+    ol {
+      list-style-type: decimal;
+    }
+
+    /* Styling Nested List */
+    ul ul {
+      list-style-type: circle;
+      margin-top: 10px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Favorite Fruits -->
+    <section>
+      <h2>My Favorite Fruits:</h2>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+        <li>Orange</li>
+        <li>Watermelon</li>
+      </ul>
+    </section>
+
+    <!-- Favorite Movies -->
+    <section>
+      <h2>Top 5 Favorite Movies:</h2>
+      <ol>
+        <li>The Shawshank Redemption</li>
+        <li>The Dark Knight</li>
+        <li>Inception</li>
+        <li>Fight Club</li>
+        <li>Pulp Fiction</li>
+      </ol>
+    </section>
+
+    <!-- Grocery List -->
+    <section>
+      <h2>Grocery Shopping List:</h2>
+      <ul>
+        <li>Fruits:
+          <ul>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Oranges</li>
+          </ul>
+        </li>
+        <li>Vegetables:
+          <ul>
+            <li>Carrots</li>
+            <li>Spinach</li>
+            <li>Broccoli</li>
+          </ul>
+        </li>
+        <li>Snacks:
+          <ul>
+            <li>Chips</li>
+            <li>Cookies</li>
+            <li>Granola Bars</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Static Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #ffffffcc;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 16px 10px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+            transition: color 0.3s, border-bottom 0.3s;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0;
+            background: #00b09b;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #00b09b;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 0.95rem;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section {
+                margin: 30px 20px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our homepage! This is where your journey begins. Discover our services, get to know us, and find what you're looking for with ease.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>We are passionate about creating clean and modern designs that make a difference. Learn more about our mission, our team, and what drives us forward.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>From custom web development to UI/UX design, we offer a full suite of digital solutions to bring your vision to life. Let's build something amazing together.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>We'd love to hear from you! Reach out via email at <strong>contact@example.com</strong> and we'll get back to you as soon as possible.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Stylish Webpage. Designed with 💚</p>
+    </footer>
+
+</body>
+</html>
+

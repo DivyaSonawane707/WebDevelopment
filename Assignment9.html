@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Employee Registration</title>
+     <style>
+         body {
+             font-family: 'Poppins', sans-serif;
+             background: 
+                 linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                 url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+             background-size: cover;
+             margin: 0;
+             padding: 50px 20px;
+             min-height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: flex-start;
+         }
+ 
+         .container {
+             width: 100%;
+             max-width: 500px;
+             background: #ffffff;
+             padding: 30px;
+             border-radius: 12px;
+             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+             transition: all 0.3s ease-in-out;
+         }
+ 
+         .container:hover {
+             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+             transform: translateY(-5px);
+         }
+ 
+         h2 {
+             text-align: center;
+             margin-bottom: 20px;
+             color: #333;
+             font-size: 28px;
+         }
+ 
+         .form-group {
+             margin-bottom: 20px;
+         }
+ 
+         label {
+             display: block;
+             margin-bottom: 8px;
+             font-weight: bold;
+             font-size: 16px;
+             color: #333;
+         }
+ 
+         input,
+         select,
+         textarea {
+             width: 100%;
+             padding: 12px;
+             border: 1px solid #ccc;
+             border-radius: 8px;
+             font-size: 16px;
+             margin-top: 6px;
+             transition: all 0.3s ease;
+         }
+ 
+         input:focus,
+         select:focus,
+         textarea:focus {
+             border-color: #007bff;
+             outline: none;
+         }
+ 
+         .gender-group {
+             display: flex;
+             align-items: center;
+             gap: 20px;
+         }
+ 
+         .gender-group input {
+             margin: 0;
+         }
+ 
+         .submit-btn {
+             width: 100%;
+             padding: 12px;
+             background-color: #007bff;
+             color: #fff;
+             border: none;
+             border-radius: 8px;
+             font-size: 18px;
+             cursor: pointer;
+             transition: background-color 0.3s ease;
+         }
+ 
+         .submit-btn:hover {
+             background-color: #0056b3;
+         }
+ 
+         .form-footer {
+             text-align: center;
+             margin-top: 20px;
+         }
+ 
+         .form-footer a {
+             color: #007bff;
+             text-decoration: none;
+             font-size: 16px;
+         }
+ 
+         .form-footer a:hover {
+             text-decoration: underline;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <div class="container">
+         <h2>Employee Registration</h2>
+         <form action="/submit_registration" method="POST">
+             <div class="form-group">
+                 <label for="emp_name">Full Name:</label>
+                 <input type="text" id="emp_name" name="emp_name" placeholder="Enter your full name" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="emp_email">Email Address:</label>
+                 <input type="email" id="emp_email" name="emp_email" placeholder="Enter your email address" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="emp_phone">Phone Number:</label>
+                 <input type="tel" id="emp_phone" name="emp_phone" placeholder="Enter your phone number" required>
+             </div>
+ 
+             <div class="form-group gender-group">
+                 <label>Gender:</label>
+                 <input type="radio" id="male" name="emp_gender" value="Male">
+                 <label for="male">Male</label>
+                 <input type="radio" id="female" name="emp_gender" value="Female">
+                 <label for="female">Female</label>
+                 <input type="radio" id="other" name="emp_gender" value="Other">
+                 <label for="other">Other</label>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="emp_department">Department:</label>
+                 <select id="emp_department" name="emp_department" required>
+                     <option value="HR">Human Resources</option>
+                     <option value="IT">IT Department</option>
+                     <option value="Finance">Finance</option>
+                     <option value="Sales">Sales</option>
+                     <option value="Marketing">Marketing</option>
+                 </select>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="emp_dob">Date of Birth:</label>
+                 <input type="date" id="emp_dob" name="emp_dob" required>
+             </div>
+ 
+             <div class="form-group">
+                 <label for="emp_address">Address:</label>
+                 <textarea id="emp_address" name="emp_address" rows="4" placeholder="Enter your address" required></textarea>
+             </div>
+ 
+             <button type="submit" class="submit-btn">Register</button>
+         </form>
+ 
+         <div class="form-footer">
+             <p>Already registered? <a href="#">Login</a></p>
+         </div>
+     </div>
+ </body>
+ 
+ </html>
+ 
